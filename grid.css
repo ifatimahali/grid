@@ -7,7 +7,7 @@
         gap:4px;
         font-size: 30px;
         color:aqua;
-        background-color: blueviolet;
+        background-color: whitesmoke;
         grid-template-columns: 1fr ;
     }
     .item1{
@@ -51,14 +51,13 @@
     .item8{
         grid-column: 1/-1;
         text-align: center;
-        background-color: orange;
     }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 .container{
     width: 100vw;
-    background-color: rgb(146, 48, 48);
+    background-color: rgb(222, 189, 189);
     height: 100vh;
     display: grid;
     gap:4px;
@@ -73,7 +72,7 @@
 }
 .item2{
     grid-row: 2/4;
-    background-color: plum;
+    background-image: url(user-plus.png);
     text-align: center;
 }
 .item3{
