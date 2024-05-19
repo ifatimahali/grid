@@ -1,4 +1,60 @@
-
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px){
+    .container{
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        gap:4px;
+        font-size: 30px;
+        color:aqua;
+        background-color: blueviolet;
+        grid-template-columns: 1fr ;
+    }
+    .item1{
+        grid-column: 1/-1;
+        text-align: center;
+        background-color:  rgb(15, 67, 122);
+    }
+    .item2{
+        grid-row: 2/4;
+        background-color: rgb(143, 154, 19);
+        text-align: center;
+        background-image:url(user-plus.png) ;
+    }
+    .item3{
+        grid-column: 2/4;
+        grid-row:2/5;
+        text-align: center;
+        background-color: rgb(243, 191, 96);
+        border: 1px solid rgb(201, 205, 206);
+    }
+    .item4{
+        grid-row: 4/7;
+        text-align: center;
+    background-color:green ;
+    }
+    .item5{
+        grid-row: 5/7;
+        grid-column: 2/4;
+        text-align: center;
+    background-color: gray;
+    }
+    .item6{
+        grid-column: 1/3;
+        text-align: center;
+    background-color:rgb(2, 52, 2);
+    }
+    .item7{
+        background-color: pink;
+        text-align: center;
+    }
+    .item8{
+        grid-column: 1/-1;
+        text-align: center;
+        background-color: orange;
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 .container{
     width: 100vw;
@@ -6,7 +62,7 @@
     height: 100vh;
     display: grid;
     gap:4px;
-    grid-template-columns: 1fr  ;
+    /* grid-template-columns: 1fr  ; */
     font-size: 20px;
     color:blue;
 }
@@ -47,28 +103,34 @@ background-color:rgb(2, 52, 2);
     text-align: center;
 }
 }
-@media only screen and (max-width: 600px){
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px){
     .container{
-        background-color: black;
         width: 100vw;
+        color: bisque;
+        font-size: 30px;
         height: 100vh;
         display: grid;
         gap:4px;
         grid-template-columns: 1fr 1fr 1fr ;
-        font-size: 50px;
-        color:white;
-        background-image:url(logo-tu.png);
     }
     .item1{
         grid-column: 1/-1;
         text-align: center;
-        background-color:  rgb(149, 177, 156);
+        background-color:  rgb(127, 166, 208);
     }
     .item2{
         grid-row: 2/4;
-        grid-column:2/5 ;
         background-color: plum;
         text-align: center;
+
+    }
+    .item3{
+        grid-column: 2/4;
+        grid-row:2/5;
+        text-align: center;
+        background-color: rgb(243, 191, 96);
+        border: 1px solid rgb(201, 205, 206);
     }
     .item4{
         grid-row: 4/7;
@@ -79,7 +141,7 @@ background-color:rgb(2, 52, 2);
         grid-row: 5/7;
         grid-column: 2/4;
         text-align: center;
-    background-color: rgb(122, 38, 38);
+    background-color: gray;
     }
     .item6{
         grid-column: 1/3;
@@ -87,7 +149,12 @@ background-color:rgb(2, 52, 2);
     background-color:rgb(2, 52, 2);
     }
     .item7{
-        background-color: rgb(177, 142, 148);
+        background-color: pink;
         text-align: center;
+    }
+    .item8{
+        grid-column: 1/-1;
+        text-align: center;
+        background-color: orange;
     }
 }
