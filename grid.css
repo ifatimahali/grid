@@ -2,7 +2,6 @@ body{
     color:white
 }
 .container{
-    border: 2px solid   blue;
     width: 30vw;
     height: 50vh;
     display: grid;
